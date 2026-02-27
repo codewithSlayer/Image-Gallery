@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Galary_Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d2b30ad9de.js" crossorigin="anonymous"></script>
+</head>             
+
+<body>
+    <header class="header">
+        <div class="logo"><a href="./main.html">Pixory</a></div>
+        <div class="search-area">
+            <input type="text" placeholder="Search for the pictures...." id="input-box" autocomplete="off"
+                oninput="this.value.trim() === ''? document.getElementById('searchBtn').disabled = true: document.getElementById('searchBtn').disabled = false">
+            <button id="searchBtn" class="btn" onclick="searchResult()" disabled>Search</button>
+        </div>
+    </header>
+    <main class="gallery-container">
+        <!-- <div class="cart-container">
+            <img src="./lalitha amma.jpg" class="pic" alt="mata">
+            <div class="image-info">
+                <div class="description">Loremfasdf, ipsum dolor.</div>
+                 <div class="likes"><i class="fa-solid fa-heart"></i>5</div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <img src="./lord_vishnu_3d - Copy.jpg" class="pic" alt="mata">
+            <div class="image-info">
+                <div class="description"></div>
+                <div class="likes"><i class="fa-solid fa-heart"></i>5</div>
+            </div>
+        </div>
+        <div class="cart-container"></div>
+        <div class="cart-container"></div>
+        <div class="cart-container"></div>
+        <div class="cart-container"></div> -->
+    </main>
+    <div style="display: flex; justify-content: center; margin-bottom: 2rem;"><button id="showBtn" class="btn"
+            onclick="showMore()">Show</button></div>
+    <footer class="footer">
+
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
